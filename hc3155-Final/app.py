@@ -16,10 +16,6 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html")
 
-@app.route("/1006Assignments")
-def assignments():
-    return render_template('assignments.html')
-
 #start the server
 if __name__ == "__main__":
     app.run()
